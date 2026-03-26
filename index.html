@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff9800">
     <title>Receita de Bolo de Laranja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.21/dist/lenis.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -36,14 +40,14 @@
 
             <!-- Imagem do Bolo (placeholder) -->
             <div class="recipe-image-section" id="image-section">
-                <img id="recipe-image" src="https://fomedebolo.com.br/img/produtos/63.jpg" alt="Bolo de Laranja">
+                <img id="recipe-image" src="https://fomedebolo.com.br/img/produtos/63.jpg" alt="Bolo de Laranja" loading="eager" decoding="async" fetchpriority="high">
             </div>
 
             <div class="recipe-content">
                 <!-- Seção de Ingredientes -->
                 <section id="ingredients-section">
                     <h2>📋 Ingredientes</h2>
-                    
+
                     <h3 id="cake-title" style="color: #ff9800; margin-top: 1rem; margin-bottom: 0.5rem;">Para o Bolo:</h3>
                     <ul class="ingredients-list" id="cake-ingredients">
                         <li><span class="ingredient-quantity">2</span> xícaras de farinha de trigo</li>
@@ -105,5 +109,9 @@
         <p id="footer-text">&copy; 2026 Receitas Deliciosas. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js" defer></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
